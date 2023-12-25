@@ -40,7 +40,7 @@ const Walpaper = () => {
           <div className='right-content pt-12 px-3 flex-initial relative' style={{zIndex:1}}>
           <div className='hidden xl:block absolute bottom-0 top-0  w-full'><Parallax /></div>
             <img className='w-full h-auto object-cover ' src="https://www.radiustheme.com/demo/wordpress/themes/quiklearn/wp-content/uploads/2023/08/hero-img-2.png" alt="" />
-            <span className='hidden xl:block absolute top-2/4 -right-48 w-full h-full' style={{ backgroundImage: 'url(https://www.radiustheme.com/demo/wordpress/themes/quiklearn/wp-content/uploads/2023/08/hero-shape-13.svg)', backgroundRepeat: 'no-repeat' ,zIndex:-99}}></span>
+            <span className='hidden xl:block h-80 absolute top-2/4 right-0' style={{ backgroundImage: 'url(https://www.radiustheme.com/demo/wordpress/themes/quiklearn/wp-content/uploads/2023/08/hero-shape-13.svg)', backgroundRepeat: 'no-repeat' ,zIndex:-99,left:'200px',width:'500px'}}></span>
           </div>
         </div>
       </div>
