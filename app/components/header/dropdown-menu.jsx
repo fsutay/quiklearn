@@ -18,7 +18,7 @@ const DropdownMenu = () => {
 
     return (
         <>
-            <button onClick={()=>setShow(prev=>!prev)} type="button" className='relative pr-6 pl-6  h-11 min-w-40 text-sm text-gray-800 flex items-center justify-between'>All Categories
+            <button onClick={()=>setShow(prev=>!prev)} type="button" className='relative pr-6 pl-6  h-11 min-w-40 text-sm text-gray-800 flex items-center justify-between xl:p-0 xl:justify-center'>All Categories
                 <MdKeyboardArrowDown className="text-xl ml-2" />
             </button>
             {show &&  <div className="absolute top-8 left-0 z-10 mt-2 w-44 pt-5 origin-top-right rounded-md bg-white  focus:outline-none list-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1" style={{boxShadow:'rgb(0 0 0/.1)0 8px 24px' }}>

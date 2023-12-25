@@ -9,7 +9,7 @@ import { PiPhoneCallThin } from "react-icons/pi";
 const Topbar = () => {
     return (
         <div className='mobile-top-bar xl:px-3 xl:mx-14'>
-            <div className='mobile-top text-sm flex flex-wrap items-center  justify-center border-b-2 xl:border-b-0 pt-3 pr-3 pb-4 xl:justify-between xl:items-center  xl:pt-10 xl:pb-10' style={{ columnGap: "30px" }}>
+            <div className='mobile-top text-sm flex flex-wrap items-center  justify-center border-b xl:border-b-0 pt-3 pr-3  xl:justify-between xl:items-center  xl:pt-10 xl:pb-10' style={{ columnGap: "30px" }}>
                 <div className='logo hidden xl:block'>
                     <a href="">
                         <img src="https://www.radiustheme.com/demo/wordpress/themes/quiklearn/wp-content/uploads/2023/08/logo-dark.svg" alt="" />
@@ -43,7 +43,8 @@ const Topbar = () => {
                         <a href="tel:+1212-226-3126" className='font-semibold'>+1212-226-3126</a>
                     </div>
                 </div> */}
-                <ul className='mobile-address flex flex-wrap items-center justify-center gap-x-3.5 leading-7 xl:hidden'>
+                <div className='flex flex-wrap items-center justify-center gap-x-2 gap-y-1 pt-3 pr-3 pb-3.5 text-center text-sm xl:border-b-0'>
+                <ul className='mobile-address flex flex-wrap items-center justify-center gap-x-3.5 m-0 p-0 leading-7 xl:hidden'>
                     <li className='flex items-center gap-1'><LuCalendarDays style={{ color: "#543ee8", fontSize: "14px" }} />tarih</li>
                     <li className='flex items-center gap-1'><SlLocationPin style={{ color: "#543ee8", fontSize: "14px" }} />457 Mott Street,NY 10013</li>
                     <li className='flex items-center gap-1'><MdOutlineWatchLater style={{ color: "#543ee8", fontSize: "14px" }} />Opening: Mon - Sat 8.00 - 18.00</li>
@@ -55,6 +56,8 @@ const Topbar = () => {
                     </div>
 
                 </div>
+                </div>
+           
             </div>
         </div>
     )

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-const AccordionMenu = ({ title, answer }) => {
+const AccordionMenu = ({ title, subtitle }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   const [isHoverTitle, setIsHoverTitle] = useState(false);
-//   const [isHoverSubTitle, setIsHoverSubTitle] = useState(false);
 
 
   const onEnterTitle=()=>{
@@ -20,7 +19,7 @@ const AccordionMenu = ({ title, answer }) => {
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full"
       >
-        <span onMouseEnter={onEnterTitle} onMouseLeave={onLeaveTitle}>{isHoverTitle?'-':''}{title}</span>
+        <span onMouseEnter={onEnterTitle} onMouseLeave={onLeaveTitle} className={`${isHoverTitle ? 'before:content-["-"] before:mr-3 before:text-indigo-600  transition-all duration-500 translate-x-6 text-indigo-600' : ''}`}>{title}</span>
         {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
         <svg
           className="fill-indigo-500 shrink-0 ml-8"
@@ -55,7 +54,7 @@ const AccordionMenu = ({ title, answer }) => {
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div className="overflow-hidden">{answer}</div>
+        <div className="overflow-hidden">{subtitle}</div>
       </div>
     </div>
   );
